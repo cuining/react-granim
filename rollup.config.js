@@ -26,6 +26,11 @@ export default {
     })
   ],
   external: ["granim", "react", "react-dom"],
-  dest: "bundle.js",
+  targets: [
+    { dest: 'dist/react-granim.js', format: 'umd' },
+    { dest: 'dist/react-granim.common.js', format: 'cjs' },
+    { dest: 'dist/react-granim.esm.js', format: 'es' }
+  ],
+  moduleName: 'react-granim',
   format: "cjs"
 };
