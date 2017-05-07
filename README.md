@@ -19,9 +19,8 @@ import Granim from 'react-granim'
 <Granim id="granim"></Granim>
 ```
 
-Live Demo
-
-//todo
+[Live Demo](https://codesandbox.io/s/L9AYVKWjj)  
+> if error, toggle the view twice. 
 
 ## Inspired
 
