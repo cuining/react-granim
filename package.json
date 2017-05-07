@@ -41,6 +41,7 @@
     "rollup-plugin-babel": "^2.7.1",
     "rollup-plugin-commonjs": "^8.0.2",
     "rollup-plugin-env": "^0.21.2",
-    "rollup-plugin-npm": "^2.0.0"
+    "rollup-plugin-npm": "^2.0.0",
+    "rollup-plugin-node-resolve": "^3.0.0"
   }
 }
