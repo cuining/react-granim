@@ -16,7 +16,7 @@ export default class Granim extends Component {
   }
 
   static defaultProps = {
-    id: 'granim-canvas',
+    id: `granim-canvas-${Math.random().toString(36).substring(2)}`,
     defaultStateName: 'default-state'
   }
 
