@@ -1,4 +1,4 @@
-[![Travis](https://img.shields.io/badge/npm-4.2.0-orange.svg?style=flat-square)](https://www.npmjs.com/package/react-granim)
+[![Travis](https://img.shields.io/badge/npm-1.1.0-orange.svg?style=flat-square)](https://www.npmjs.com/package/react-granim)
 
 ## Installation
 
@@ -20,7 +20,6 @@ import Granim from 'react-granim'
 ```
 
 [Live Demo](https://codesandbox.io/s/L9AYVKWjj)  
-> if error, toggle the view twice. 
 
 ## Inspired
 
