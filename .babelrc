@@ -1,12 +1,14 @@
 {
   "presets": [
-    ["latest", {
-      "es2015": {
-        "modules": false
-      }
+    ["env", {
+      "targets": {
+        "ie": 8
+      },
+      "modules": false
     }],
-    "react",
-    "stage-2"
+    "react"
   ],
-  "plugins": ["external-helpers"]
+  "plugins": [
+    "transform-class-properties"
+  ]
 }

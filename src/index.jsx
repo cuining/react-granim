@@ -1,13 +1,18 @@
-import React, { Component } from 'react';
-import PropsType from 'prop-types';
-import granim from 'granim';
+import React, { Component } from 'react'
+import PropsType from 'prop-types'
+import granim from 'granim'
 
 export default class Granim extends Component {
   static propsType = {
     id: PropsType.string,
     name: PropsType.string,
     elToSetClassOn: PropsType.string,
-    direction: PropsType.oneOf('diagonal', 'left-right', 'top-bottom', 'radial'),
+    direction: PropsType.oneOf(
+      'diagonal',
+      'left-right',
+      'top-bottom',
+      'radial'
+    ),
     isPausedWhenNotInView: PropsType.bool,
     opacity: PropsType.arrayOf(PropsType.number).isRequired,
     stateTransitionSpeed: PropsType.number,
@@ -25,7 +30,7 @@ export default class Granim extends Component {
     return {
       element: `#${this.props.id}`,
       opacity: [1, 1],
-      states : {
+      states: {
         [this.props.defaultStateName]: {
           gradients: [
             ['#EB3349', '#F45C43'],
@@ -55,13 +60,11 @@ export default class Granim extends Component {
   }
 
   componentDidMount() {
-    this.granim = new granim(Object.assign({}, this.config, this.props));
+    this.granim = new granim(Object.assign({}, this.config, this.props))
   }
 
   render() {
-    const { id, style } = this.props;
-    return (
-      <canvas id={id} style={style || this.style}></canvas>
-    )
+    const { id, style } = this.props
+    return <canvas id={id} style={style || this.style} />
   }
 }
